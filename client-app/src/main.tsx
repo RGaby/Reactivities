@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client'
 
+import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-calendar/dist/Calendar.css'
 import './app/layout/styles.css'
 import { StoreContext, store } from './app/stores/store'
