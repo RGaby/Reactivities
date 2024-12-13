@@ -27,3 +27,17 @@ export interface Photo {
     url: string;
     isMain: boolean;
 }
+
+
+export class ProfileInfoForm {
+
+    constructor(profileForm?: ProfileInfoForm | Profile) {
+        if (profileForm) {
+            this.displayName = profileForm.displayName;
+            this.bio = profileForm.bio;
+        }
+    }
+
+    displayName: string = "";
+    bio?: string;
+}

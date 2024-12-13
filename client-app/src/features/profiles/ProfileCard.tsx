@@ -7,19 +7,25 @@ interface Props {
     profile: Profile
 }
 
-
 export default observer(function ProfileCard({ profile }: Props) {
+
+    function trucate(str: string | undefined) {
+        if (str) {
+            return str.length > 40 ? str.substring(0, 37) + "..." : str;
+        }
+    }
+
     return (
         <Card as={Link} to={`/profiles/${profile.userName}`}>
             <Image src={profile.image || '/assets/user.png'} />
             <Card.Content>
                 <Card.Header>{profile.displayName}</Card.Header>
-                <Card.Header> Bio goes here</Card.Header>
+                <Card.Description> {trucate(profile.bio)}</Card.Description>
             </Card.Content>
             <Card.Content extra>
                 <Icon name='user' />
                 20 followers
             </Card.Content>
-        </Card>
+        </Card >
     )
 })
