@@ -13,7 +13,7 @@ namespace Application.Comments
     {
         public class Command : IRequest<Result<CommentDto>>
         {
-            public string Body { get; set; }
+            public required string Body { get; set; }
             public Guid ActivityId { get; set; }
         }
 

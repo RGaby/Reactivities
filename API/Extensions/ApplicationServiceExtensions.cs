@@ -18,7 +18,7 @@ namespace API.Extensions
             services.AddSwaggerGen();
             services.AddDbContext<DataContext>(opt =>
             {
-                opt.UseSqlite(
+                opt.UseSqlServer(
                     config.GetConnectionString("DefaultConnection"));
             });
 

@@ -11,8 +11,8 @@ namespace Application.Profiles
     {
         public class Command : IRequest<Result<Unit>>
         {
-            public string DisplayName { get; set; }
-            public string Bio { get; set; }
+            public required string DisplayName { get; set; }
+            public required string Bio { get; set; }
         }
 
         public class Validator : AbstractValidator<Command>

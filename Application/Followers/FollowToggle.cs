@@ -15,7 +15,7 @@ namespace API.Followers
     {
         public class Command : IRequest<Result<Unit>>
         {
-            public string TargetUsername { get; set; }
+            public required string TargetUsername { get; set; }
         }
 
         public class Handler : IRequestHandler<Command, Result<Unit>>

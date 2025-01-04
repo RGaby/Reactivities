@@ -3,7 +3,7 @@ import { Button, Header, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { IActivity, ActivityFormValues } from "../../../app/model/activity";
+import { ActivityFormValues } from "../../../app/model/activity";
 import { v4 as uuid } from 'uuid';
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { Formik, Form } from "formik";

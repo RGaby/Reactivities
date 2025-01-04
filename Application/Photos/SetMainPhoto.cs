@@ -11,7 +11,7 @@ namespace Application.Photos
     {
         public class Command : IRequest<Result<Unit>>
         {
-            public string Id { get; set; }
+            public required string Id { get; set; }
         }
 
         public class Handler : IRequestHandler<Command, Result<Unit>>

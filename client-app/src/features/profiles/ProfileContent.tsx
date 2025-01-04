@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Tab, TabPane } from "semantic-ui-react";
+import { Tab } from "semantic-ui-react";
 import ProfilePhotos from "./ProfilePhotos";
 import { Profile } from "../../app/model/profile";
 import { observer } from "mobx-react-lite";
