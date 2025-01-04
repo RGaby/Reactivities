@@ -23,7 +23,7 @@ jobs:
       - name: Install deps and build react app
         run: |
           cd client-app
-          npm install
+          npm install --force
           npm run build
 
       - name: Set up .NET Core
